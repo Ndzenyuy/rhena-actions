@@ -7,7 +7,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: rhena.ndzenyuyjones.link
+  - host: rhena.ndzenyuyhans.link
     http:
       paths:
       - path: /

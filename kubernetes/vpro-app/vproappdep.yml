@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: rhenaapp
-        image: ndzenyuy/vprofileapp
+        image: rhenaapp/vprofileapp
         ports:
         - name: rhenaapp-port
           containerPort: 8080

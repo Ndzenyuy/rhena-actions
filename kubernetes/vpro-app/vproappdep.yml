@@ -1,24 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: rhenaapp
+  name: vproapp
   labels: 
-    app: rhenaapp
+    app: vproapp
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: rhenaapp
+      app: vproapp
   template:
     metadata:
       labels:
-        app: rhenaapp
+        app: vproapp
     spec:
       containers:
-      - name: rhenaapp
-        image: rhenaapp/vprofileapp
+      - name: vproapp
+        image: vproapp/vprofileapp
         ports:
-        - name: rhenaapp-port
+        - name: vproapp-port
           containerPort: 8080
       initContainers:
       - name: init-mydb
